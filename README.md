@@ -1,3 +1,5 @@
+<img width="1527" height="779" alt="image" src="https://github.com/user-attachments/assets/92b068ff-daa6-4830-825c-e372f5c35ca0" />
+
 Upload a CSV of any business data — sales, revenue, signups, costs — and get a
 full analytics dashboard in seconds. Includes interactive Plotly charts, month-over-
 month comparisons, anomaly detection, and a linear regression forecast for the next
