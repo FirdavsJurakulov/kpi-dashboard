@@ -26,7 +26,11 @@ if uploaded is None:
     st.stop()
 
 # --- Load Data ---
-df = pd.read_csv(uploaded)
+try:
+    df = pd.read_csv(uploaded, encoding='utf-8')
+except UnicodeDecodeError:
+    uploaded.seek(0)  # reset file pointer after failed read
+    df = pd.read_csv(uploaded, encoding='latin-1')
 st.success(f"Loaded **{len(df):,} rows** and **{len(df.columns)} columns**")
 
 col1, col2 = st.columns(2)
